@@ -1,3 +1,7 @@
+/* DATASET FOUND AT: https://www.dropbox.com/s/znmjrtlae6vt4zi/employees.sql?dl=0 */ 
+
+/* The values populated are fictious and contain no real information regarding actual persons */
+
 CREATE DATABASE IF NOT EXISTS employees; 
 USE employees;
 
@@ -66,6 +70,9 @@ CREATE TABLE salaries (
     PRIMARY KEY (emp_no, from_date)
 ) 
 ; 
+
+
+/* ONLY SOME OF THE INSERTED VALUES SHOWING HERE */ 
 
 INSERT INTO `employees` VALUES (10001,'1953-09-02','Georgi','Facello','M','1986-06-26'),
 (10002,'1964-06-02','Bezalel','Simmel','F','1985-11-21'),
