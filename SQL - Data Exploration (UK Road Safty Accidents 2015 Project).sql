@@ -58,6 +58,7 @@ VALUES
 (98, 'Goods vehicle (unknown weight) occupant');
 
 
+/* Beginning of Data Exploration */
 
 
 /* Find Accident Severity and Total Accidents per Vehicle Type */
