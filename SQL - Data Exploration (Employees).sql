@@ -1,3 +1,6 @@
+/* Beginning of Data Exploration */
+
+
 /* Find the average salary of all CURRENT employees by job title. */
 
 WITH cte AS
