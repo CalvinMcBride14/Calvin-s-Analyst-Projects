@@ -32,7 +32,12 @@ Create table if not exists `CC_Customers` (
 
 SELECT * FROM banking_database.CC_customers;
 
+
+
+
 /* Started Data Exploration */ 
+
+
 
 /* Find the Distibution of customers who were lost(attrited) by age */
 
@@ -47,6 +52,8 @@ WHERE
 attrition_flag = 'attrited customer' 
 group by age_range 
 order by age_range;
+
+
 
 /* Find the number(count) of both "attrited and exitising" customers who used a dependent */
 
@@ -68,6 +75,8 @@ GROUP BY dependent_count
 ORDER BY dependent_count
 ;
 
+
+
 /* Find the Education Level count for both "attrited" and "exitising" customers */
 
 SELECT education_level, count(*) as existing_customer_count
@@ -87,6 +96,8 @@ attrition_flag = 'attrited customer'
 GROUP BY education_level
 ORDER BY education_level
 ;
+
+
 
 /* Find the count for each Card Categoties used by both "existing" and "attrited" customers. */
 
@@ -108,6 +119,8 @@ GROUP BY card_category
 ORDER BY card_category
 ;
 
+
+
 /* Find the number of male and female "exisiting" and "attrited" customers */
 
 SELECT 
@@ -125,6 +138,8 @@ FROM
 banking_database.cc_customers
 WHERE attrition_flag = 'attrited customer'
 ;
+
+
 
 /* Find the month on book (number of months that have completed since the loan origination date) range for both "existing" and "attrited" customers. */
 
