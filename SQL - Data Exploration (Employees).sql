@@ -99,3 +99,41 @@ WHERE
 ORDER BY emp_no
 LIMIT 500;
 
+
+
+/* Retrieve a list of all managers with an output contaning employee number, first name, last name, and a new coulumn indicating manager status. */
+
+
+SELECT
+	e.emp_no,
+	e.first_name, 
+	e.last_name,
+CASE 
+	WHEN dm.emp_no IS NOT NULL THEN 'Manager'
+	ELSE 'Employee' 
+END AS is_manager
+FROM
+ employees e
+JOIN 
+dept_manager dm 
+ON dm.emp_no = e.emp_no
+ORDER BY dm.emp_no;
+
+
+
+/* Obtain the total number of employees that were hired before, between, and after the dates of 1990 and 1995. */
+
+SELECT a.employeed_date, COUNT(*) AS Counts
+ FROM 
+	(SELECT 
+    emp_no, 
+    hire_date, 
+    SUBSTRING(hire_date FROM 1 FOR 4) AS hire_date_year,
+	CASE 
+		WHEN SUBSTRING(hire_date FROM 1 FOR 4) < '1990' THEN 'Employeed before 1990'
+		WHEN SUBSTRING(hire_date FROM 1 FOR 4) >= '1990' AND SUBSTRING(hire_date FROM 1 FOR 4) <= 1995 THEN 'Employeed between 1990 and 1995'
+		ELSE 'Employeed after 1995' 
+	END AS employeed_date
+	FROM employees) a 
+GROUP BY a.employeed_date;
+
