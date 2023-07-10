@@ -1,4 +1,5 @@
-/* Beginning of Data Exploration */
+/* Perform Data Exploration */
+------------------------------
 
 
 /* Find the average salary of all CURRENT employees by job title. */
@@ -16,6 +17,8 @@ FROM cte
 GROUP BY 1
 ORDER BY 2 DESC;
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
 /* Find the average salaries greater than $60,000 of department managers seperated by department. */
 
 SELECT 
@@ -31,8 +34,9 @@ HAVING average_salary > 60000
 ORDER BY average_salary DESC
 ;
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
-/* Find the total number of employees in each department. (List associated department number and department name) */
+/* Find the total number of employees in each department. (List associated department number and department name). */
 
 SELECT d.dept_no, de.dept_name, count(e.emp_no) AS num_of_employees
 FROM employees e
@@ -44,6 +48,7 @@ GROUP BY 1
 ORDER BY 3 DESC;
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 /* Write a query that shows which employees are currently active and which are no longer employeed with the company. */
 
@@ -63,6 +68,7 @@ GROUP BY de.emp_no
 LIMIT 1000;
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 /* Find which employees by their full name, has been given a salary increase greater than $30,000. */
 
@@ -81,6 +87,7 @@ FROM
 GROUP BY s.emp_no;
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 /* Retrieve a list of all employees and any all other relevant information regarding them, who hold the title of "Assistant Engineer". */
 
@@ -91,15 +98,16 @@ FROM
 JOIN titles t ON e.emp_no = t.emp_no
 WHERE
     t.title IN ( SELECT 
-            title
-        FROM
-            titles
-        WHERE
-            title = 'Assistant Engineer')
+          	  title
+        	FROM
+         	   titles
+        	WHERE
+           	 title = 'Assistant Engineer')
 ORDER BY emp_no
 LIMIT 500;
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 /* Retrieve a list of all managers with an output contaning employee number, first name, last name, and a new coulumn indicating manager status. */
 
@@ -120,6 +128,7 @@ ON dm.emp_no = e.emp_no
 ORDER BY dm.emp_no;
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 /* Obtain the total number of employees that were hired before, between, and after the dates of 1990 and 1995. */
 
