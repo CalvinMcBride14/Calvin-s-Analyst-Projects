@@ -1,6 +1,6 @@
 
 /* Perform Data Cleaning */
-
+---------------------------
 
 /* Convert Date columns to the appropriate data type. */
 
@@ -10,7 +10,7 @@ ALTER table sales
 ALTER table stores
    modify Store_Open_Date DATE;
    
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Product_cost and product_price columns contain '$' remove this special character from all rows. */ 
 
  UPDATE  products
@@ -20,7 +20,7 @@ ALTER table stores
    SET Product_Price = REPLACE(Product_Price,'$',' ');
    
    
-   
+ ----------------------------------------------------------------------------------------------------------------------------------------------------  
    /* Now convert these colunns into a decimal data type. */
    
    ALTER TABLE products
@@ -30,7 +30,7 @@ ALTER table stores
    MODIFY Product_Cost DECIMAL(10,2);
    
    
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Check for any duplicate records in the dataset. */ 
 
 SELECT 
@@ -41,16 +41,16 @@ GROUP BY product_ID
 HAVING ID_appearance > 1;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Check for any NULL values in the dataset. */
 
 SELECT  * 
 FROM sales
 WHERE (Sale_ID OR Date OR Store_ID OR Product_ID OR Units) IS NULL;
 
---------------------------------------------------------------------------------------------
-/* Perfrom Data Exploration */
 
+/* Perfrom Data Exploration */
+------------------------------
 
 /* Find the MIN, MAX, & AVG for stock, highest, sales price. */ 
 
@@ -73,7 +73,7 @@ SELECT
 FROM products;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Find the Sales Units per products for the first five products. */
 
 SELECT
@@ -87,7 +87,7 @@ GROUP BY s.Product_ID, p.Product_Name
 ORDER BY Units_sold DESC  LIMIT 5;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Find the Revenue per product for the first five products. */
 SELECT
      s.Product_ID AS product_ID,
@@ -102,7 +102,7 @@ GROUP BY s.Product_ID, p.Product_Name, p.Product_Price
 ORDER BY revenue_per_product DESC LIMIT 5;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Find how much money Mexico Toys spends on their products. */ 
 
 SELECT
@@ -118,7 +118,7 @@ GROUP BY s.Product_ID, p.Product_Name, p.Product_Cost
 ORDER BY cost_per_product DESC;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Determine how each product performs by calculating profit and profit percentage per product. */
 
 SELECT
@@ -138,7 +138,7 @@ GROUP BY s.Product_ID, p.Product_Name, p.Product_Cost, p.product_price
 ORDER BY profit_percentage DESC;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Find the total cost, total revenue, total profit and profit percentage per type of location to see how the store location can affect strategy. */
 
 SELECT
@@ -169,7 +169,7 @@ ORDER BY profit_percentage DESC;
 
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Find the total cost, total revenue, total profit and profit percentage per year and per category of toys. */ 
 
 SELECT
@@ -198,7 +198,7 @@ FROM
 GROUP BY year;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Determine the total cost, total revenue, total profit and profit percentage per year. */ 
 
 SELECT
@@ -224,7 +224,7 @@ FROM
 GROUP BY year;
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 /* Find the total inventory cost. */
 
 SELECT
