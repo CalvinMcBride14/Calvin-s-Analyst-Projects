@@ -5,8 +5,7 @@ Following are my projects in SQL, Tableau & Excel:
  SQL -
 
 Employees Dataset: Data Exploration
-Review the SQL Script: ![image](https://github.com/CalvinMcBride14/Calvin-s-Analyst-Projects/assets/135881962/13090cf6-8be0-4ab8-860b-e892332203ae)
-
+Review the SQL Script: [https://github.com/CalvinMcBride14/Calvin-s-Analyst-Projects/blob/main/SQL%20-%20Data%20Exploration%20(Employees).sql](url)
 
 Credit Card Customers Dataset: Data Exploration
 Review the SQL Script: HERE
