@@ -5,9 +5,11 @@ Following are my projects in SQL, Tableau & Excel:
  SQL -
 
 Employees Dataset: Data Exploration
-Review the SQL Script: HERE
+Review the SQL Script: ![image](https://github.com/CalvinMcBride14/Calvin-s-Analyst-Projects/assets/135881962/13090cf6-8be0-4ab8-860b-e892332203ae)
+
 
 Credit Card Customers Dataset: Data Exploration
 Review the SQL Script: HERE
+
 
 <img width="1256" alt="Screen Shot 2023-05-24 at 6 51 55 PM" src="https://github.com/CalvinMcBride14/Calvin-s-Analyst-Projects/assets/135881962/eb439c8f-0325-4dfc-87be-20e4cf058c20">
