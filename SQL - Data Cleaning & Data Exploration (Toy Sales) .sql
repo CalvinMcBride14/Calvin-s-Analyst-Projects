@@ -1,6 +1,6 @@
 
 /* Perform Data Cleaning */
----------------------------
+--------------------------
 
 /* Convert Date columns to the appropriate data type. */
 
