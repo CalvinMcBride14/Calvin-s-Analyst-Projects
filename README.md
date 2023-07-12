@@ -3,7 +3,7 @@
 
 
 Follow my Data Analytics Projects for: SQL (MySQL & PostgreSQL) Tableau & Microsoft Excel:
--
+
 
 
 
