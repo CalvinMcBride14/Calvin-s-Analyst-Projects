@@ -7,7 +7,7 @@ Goals of the Analysis are as follows:
 5. Gender counts for both attrited and existing customers.
 6. Months on book range for both attrited and existing customers. 
 
-Dataset found on Kaggle.com
+This Dataset was found on Kaggle.com
 
     
 /* Perform Data Exploration */
