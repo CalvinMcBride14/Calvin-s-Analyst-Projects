@@ -8,7 +8,7 @@ Goals of the Analysis are as follows:
 6. Overall revenue, cost, profit and profit percentage split in years and months.
 7. Current inventory volume and value.
    
-Mexico toys company is a fictitious company and data are provided by maven Analytics. The data source will be found using the following link: https://app.mavenanalytics.io/datasets?search=mexi (Need an account on Maven Analytics)
+Mexico toys company is a fictitious company and data are provided by Maven Analytics. The Dataset will be found using the following link: https://app.mavenanalytics.io/datasets?search=mexi (Need an account on Maven Analytics)
 
    
 /* Perform Data Cleaning */
