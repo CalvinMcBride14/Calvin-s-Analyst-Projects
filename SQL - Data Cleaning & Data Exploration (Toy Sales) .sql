@@ -1,4 +1,16 @@
+Goals of the Analysis are as follows:
 
+Toys sales in terms of units sold and revenue per product, and also which product performs best.
+Revenue, cost and profit per product and also which product performs best.
+Revenue, cost and profit per store location(store location is a main part of Mexico toys commercial strategy).
+Revenue, cost and profit per toys category.
+Overall revenue, cost, profit and profit percentage.
+Overall revenue, cost, profit and profit percentage split in years and months.
+Current inventory volume and value.
+   
+Mexico toys company is a fictitious company and data are provided by maven Analytics. The data source will be found using the following link: https://app.mavenanalytics.io/datasets?search=mexi (Need an account on Maven Analytics)
+
+   
 /* Perform Data Cleaning */
 --------------------------
 
