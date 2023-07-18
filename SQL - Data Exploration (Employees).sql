@@ -9,6 +9,8 @@ Goals of the Analysis are as follows:
 7. Managers with their manager status provided in a seperate column.
 8. List employees that were hired bewteen a specified range of dates.
 
+This Dataset found at: https://www.dropbox.com/s/znmjrtlae6vt4zi/employees.sql?dl=0
+
 
 /* Perform Data Exploration */
 ------------------------------
