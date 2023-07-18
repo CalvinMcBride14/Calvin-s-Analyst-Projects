@@ -1,13 +1,13 @@
 Goals of the Analysis are as follows:
 
 1. Average salary of current employees with their associated job titles.
-2. Take a look at the average salaries held by department managers distinguished by department.
-3. Locate the number of employees in each department.
-4. Generate a list revealing employees that are active and previous employees who have left the company.
-5. Determine which employees are making over a specified salary amount.
-6. Retrieve a list of employees that hold the title of Assistant Manager.
-7. Obtain a list of managers with their manager status provided in a seperate column.
-8. List the employees that were hired bewteen a specified range of dates.
+2. Average salaries held by department managers distinguished by department.
+3. Number of employees in each department.
+4. Employees that are active and previous employees who have left the company.
+5. Which employees are making over a specified salary amount.
+6. List employees that hold the title of Assistant Manager.
+7. Managers with their manager status provided in a seperate column.
+8. List employees that were hired bewteen a specified range of dates.
 
 
 /* Perform Data Exploration */
