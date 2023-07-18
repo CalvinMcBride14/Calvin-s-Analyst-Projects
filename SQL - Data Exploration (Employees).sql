@@ -54,10 +54,10 @@ ORDER BY average_salary DESC
 
 SELECT d.dept_no, de.dept_name, count(e.emp_no) AS num_of_employees
 FROM employees e
-JOIN dept_emp d
-ON d.emp_no = e.emp_no
-JOIN departments de
-ON de.dept_no = d.dept_no
+	JOIN dept_emp d
+		ON d.emp_no = e.emp_no
+	JOIN departments de
+		ON de.dept_no = d.dept_no
 GROUP BY 1
 ORDER BY 3 DESC;
 
