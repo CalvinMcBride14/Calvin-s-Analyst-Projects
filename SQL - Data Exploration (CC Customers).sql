@@ -1,11 +1,11 @@
 Goals of the Analysis are as follows:
 
-1. Determine the age ranges for customers that were attrited.
+1. Age ranges for customers that were attrited.
 2. Compare the number of customers who either attrited or remained, who used a dependent.
 3. Compare the education status for both attrited and existing customers.
 4. Compare the card category count for both attrited and existing customers.
-5. Determine the gender counts for both attrited and existing customers.
-6. Determine the months on book range for both attrited and existing customers. 
+5. Gender counts for both attrited and existing customers.
+6. Months on book range for both attrited and existing customers. 
 
     
 /* Perform Data Exploration */
