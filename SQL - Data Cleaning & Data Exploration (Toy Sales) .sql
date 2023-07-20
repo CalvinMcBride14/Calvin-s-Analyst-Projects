@@ -86,7 +86,7 @@ FROM products;
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-/* Find the Sales Units per products for the first five products. */
+/* Find the Sales Units per products for the top five products. */
 
 SELECT
      s.Product_ID AS product_ID,
@@ -100,7 +100,7 @@ ORDER BY Units_sold DESC  LIMIT 5;
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-/* Find the Revenue per product for the first five products. */
+/* Find the Revenue per product for the top five products. */
 SELECT
      s.Product_ID AS product_ID,
      p.Product_Name AS name,
